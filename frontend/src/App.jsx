@@ -1,6 +1,7 @@
 import "./App.css";
+import { Container } from "react-bootstrap";
+import { Outlet } from "react-router-dom";
 
-import Home from "./pages/Home";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 
@@ -9,7 +10,9 @@ const App = () => {
     <>
       <Header />
       <main>
-        <Home />
+        <Container>
+          <Outlet />
+        </Container>
       </main>
       <Footer />
     </>
