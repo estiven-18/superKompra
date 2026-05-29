@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 import products from "../products.js";
+import Rating from "./Rating.jsx";
 
 const ProductoDetalle = () => {
   //sirve para obtener el id del producto desde la URL y luego buscar el producto correspondiente en la lista de productos para mostrar sus detalles.
@@ -37,6 +38,16 @@ const ProductoDetalle = () => {
                 <Row>
                   <Col>Estado:</Col>
                   <Col>{product.countInStock > 0 ? "En Stock" : "Agotado"}</Col>
+                </Row>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Row>
+                  <Col className="rating">
+                    <Rating
+                      value={product.rating}
+                      text={`${product.numReviews} reseñas`}
+                    />
+                  </Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
