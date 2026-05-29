@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
+import ProductoDetalle from "./pages/ProductoDetalle.jsx";
 
 // enrutador de la aplicación
 
@@ -19,7 +20,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
       <Route path="/producto/hola" element={<Home />} />
-      {/* <Route path="/product/:id" element={<ProductoDetalle />} /> */}
+      {<Route path="/product/:id" element={<ProductoDetalle />} /> }
     </Route>,
   ),
 );
