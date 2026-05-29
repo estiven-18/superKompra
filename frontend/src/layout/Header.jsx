@@ -5,10 +5,10 @@ import { FaCartShopping, FaUser } from 'react-icons/fa6'
 const Header = () => {
   return (
     <>
-      <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+      <Navbar expand="md" bg="dark" data-bs-theme="dark" collapseOnSelect>
       <Container>
         <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="SuperKompra" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
