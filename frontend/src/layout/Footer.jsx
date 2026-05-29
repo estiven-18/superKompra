@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <Container>
+        <Container fluid className="bg-dark text-white py-3">
           <Row>
-            <Col bg="dark" text="white">
+            <Col p-5 className="text-center">
               SuperKompra
             </Col>
-            <Col>&copy; {currentYear} SuperKompra. All rights reserved.</Col>
+            <Col p-5 className="text-center">&copy; {currentYear} SuperKompra. All rights reserved.</Col>
           </Row>
         </Container>
       </footer>
